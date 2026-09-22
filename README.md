@@ -2,6 +2,7 @@
 
 An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Take the BodyParts3D adult male reference apart into **2,234 individually selectable meshes**, explore **15 anatomical systems**, and search **3,432 named concepts**.
 
+**[Launch the 3D Anatomy demo](https://andreaisabelmontana.github.io/3D-Anatomy/)**
 
 ## Explore
 
@@ -54,7 +55,11 @@ The repository includes browser-ready geometry. Rebuilding it is optional: obtai
 
 ## Deploy
 
-Import this repository into Vercel as a Vite project. The included `vercel.json` configures `npm ci`, `npm run build`, and the `dist` output directory. It can also be served by a static host.
+The [GitHub Pages workflow](.github/workflows/pages.yml) checks, builds, and publishes the demo whenever changes are pushed to `main`. It can also be started manually from the Actions tab. In repository Settings → Pages, the publishing source is **GitHub Actions**.
+
+The workflow sets Vite's base path for this repository, so the anatomy catalogue and model files load from `/3D-Anatomy/`. To reproduce the Pages build locally, run `npm run build -- --base /3D-Anatomy/`.
+
+The included `vercel.json` also supports Vercel deployment with `npm ci`, `npm run build`, and the `dist` output directory.
 
 ## License
 
