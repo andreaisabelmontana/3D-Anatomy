@@ -36,6 +36,7 @@ jobs:
           npm run check
           node scripts/validate-atlas.mjs
           node scripts/validate-interactions.mjs
+          node scripts/validate-study-list.mjs
       - name: Build the demo
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}

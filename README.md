@@ -12,6 +12,8 @@ An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Ta
 - Search anatomical names and source identifiers.
 - Isolate a selected structure and read its details.
 - Use compact controls and detail panels on mobile.
+- Save selected structures to a personal study list and revisit them between sessions. Your list stays in your browser, with no account needed.
+- Explore Circulation, Breathing, or Movement with one-click system presets.
 
 ## Run locally
 
@@ -30,6 +32,7 @@ Open http://localhost:3016. To build the static site, run `npm run build`; the o
 npm run check
 node scripts/validate-atlas.mjs
 node scripts/validate-interactions.mjs
+node scripts/validate-study-list.mjs
 npm run build
 ```
 
